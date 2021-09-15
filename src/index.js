@@ -1,12 +1,23 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
-import {ThemeProvider} from 'react-native-magnus';
+import {SafeAreaView} from 'react-native';
+import {
+  ThemeProvider,
+  Header,
+  Button,
+  Icon,
+  Div,
+  Text,
+} from 'react-native-magnus';
 
 const App = () => {
   return (
     <ThemeProvider>
       <SafeAreaView>
-        <Text>Coinrelax</Text>
+        <Header py={10}>
+          <Text fontWeight="bold" fontSize="2xl">
+            Coinrelax
+          </Text>
+        </Header>
       </SafeAreaView>
     </ThemeProvider>
   );
